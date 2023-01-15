@@ -17,6 +17,13 @@
 		72C66A3929747859000C8896 /* GuidomiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A3829747859000C8896 /* GuidomiaUITests.swift */; };
 		72C66A3B29747859000C8896 /* GuidomiaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A3A29747859000C8896 /* GuidomiaUITestsLaunchTests.swift */; };
 		72C66A4E297482B9000C8896 /* car_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 72C66A4D297482B9000C8896 /* car_list.json */; };
+		72C66A5629748F9C000C8896 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A5529748F9C000C8896 /* HomeScreen.swift */; };
+		72C66A5829748FB6000C8896 /* CarListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A5729748FB6000C8896 /* CarListView.swift */; };
+		72C66A5A29748FD1000C8896 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A5929748FD1000C8896 /* RatingView.swift */; };
+		72C66A5C29748FEC000C8896 /* LocalDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A5B29748FEC000C8896 /* LocalDecoder.swift */; };
+		72C66A5E29749007000C8896 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A5D29749007000C8896 /* Car.swift */; };
+		72C66A602974901D000C8896 /* CarListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A5F2974901D000C8896 /* CarListViewModel.swift */; };
+		72C66A6229749060000C8896 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A6129749060000C8896 /* NavigationBar.swift */; };
 		C78EFE28C0E6B215A486DA86 /* Pods_GuidomiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE3D5D742A5EAB66762A3CC9 /* Pods_GuidomiaTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +58,13 @@
 		72C66A3829747859000C8896 /* GuidomiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidomiaUITests.swift; sourceTree = "<group>"; };
 		72C66A3A29747859000C8896 /* GuidomiaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidomiaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		72C66A4D297482B9000C8896 /* car_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = car_list.json; sourceTree = "<group>"; };
+		72C66A5529748F9C000C8896 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		72C66A5729748FB6000C8896 /* CarListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListView.swift; sourceTree = "<group>"; };
+		72C66A5929748FD1000C8896 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		72C66A5B29748FEC000C8896 /* LocalDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDecoder.swift; sourceTree = "<group>"; };
+		72C66A5D29749007000C8896 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		72C66A5F2974901D000C8896 /* CarListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewModel.swift; sourceTree = "<group>"; };
+		72C66A6129749060000C8896 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		8BCE3FD3E71906CE206D8B84 /* Pods_Guidomia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guidomia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		941E01B36B34680D9DD6213A /* Pods-Guidomia-GuidomiaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guidomia-GuidomiaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Guidomia-GuidomiaUITests/Pods-Guidomia-GuidomiaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		96D5C16AEE0573D4D15B8E86 /* Pods-Guidomia-GuidomiaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guidomia-GuidomiaUITests.release.xcconfig"; path = "Target Support Files/Pods-Guidomia-GuidomiaUITests/Pods-Guidomia-GuidomiaUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -183,6 +197,7 @@
 		72C66A4929748277000C8896 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				72C66A5F2974901D000C8896 /* CarListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -190,6 +205,7 @@
 		72C66A4A2974827F000C8896 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				72C66A5D29749007000C8896 /* Car.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -213,6 +229,7 @@
 		72C66A4F297482BE000C8896 /* JSONDecoder */ = {
 			isa = PBXGroup;
 			children = (
+				72C66A5B29748FEC000C8896 /* LocalDecoder.swift */,
 			);
 			path = JSONDecoder;
 			sourceTree = "<group>";
@@ -220,6 +237,7 @@
 		72C66A50297482DD000C8896 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				72C66A5529748F9C000C8896 /* HomeScreen.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -227,6 +245,7 @@
 		72C66A51297482E4000C8896 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				72C66A6129749060000C8896 /* NavigationBar.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -234,6 +253,7 @@
 		72C66A52297482EE000C8896 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				72C66A5729748FB6000C8896 /* CarListView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -241,6 +261,7 @@
 		72C66A5429748346000C8896 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				72C66A5929748FD1000C8896 /* RatingView.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -462,7 +483,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				72C66A2029747854000C8896 /* ContentView.swift in Sources */,
+				72C66A5829748FB6000C8896 /* CarListView.swift in Sources */,
 				72C66A1E29747854000C8896 /* GuidomiaApp.swift in Sources */,
+				72C66A5A29748FD1000C8896 /* RatingView.swift in Sources */,
+				72C66A5C29748FEC000C8896 /* LocalDecoder.swift in Sources */,
+				72C66A6229749060000C8896 /* NavigationBar.swift in Sources */,
+				72C66A5E29749007000C8896 /* Car.swift in Sources */,
+				72C66A5629748F9C000C8896 /* HomeScreen.swift in Sources */,
+				72C66A602974901D000C8896 /* CarListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
