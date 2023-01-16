@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct HomeScreen: View {
     
@@ -23,6 +24,14 @@ struct HomeScreen: View {
         self.makeList = []
         self.modelList = []
         self.carListVM.decodeCarList()
+        
+        //RealmSwift
+        
+        do {
+            _ = try Realm()
+        } catch {
+            print("Error: \(error)")
+        }
     }
 
     var body: some View {
