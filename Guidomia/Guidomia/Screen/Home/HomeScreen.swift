@@ -9,15 +9,12 @@ import SwiftUI
 
 struct HomeScreen: View {
     
-    @ObservedObject private var carListVM: CarListViewModel
-
+    @ObservedObject public var carListVM: CarListViewModel
+    @State var projectManager = ProjectManager()
     init() {
         self.carListVM = CarListViewModel()
         self.carListVM.decodeCarList()
-        
-//        UINavigationBar.appearance().backgroundColor = .orange
-//        UINavigationBar.appearance().largeTitleTextAttributes = [.font : UIFont(name: "Georgia-Bold", size: 20)!]
-
+            
     }
 
     var body: some View {
@@ -138,10 +135,7 @@ struct HomeScreen: View {
 
                     
                     // car list element
-
-                    CarListView(cars:  self.carListVM.cars, selectedCell: "")
-                        .background(Color("black"))
-                        
+                    CarListView(cars:  self.carListVM.cars, projectManager: projectManager, carListVM: self.carListVM)
                 }
                 
                 

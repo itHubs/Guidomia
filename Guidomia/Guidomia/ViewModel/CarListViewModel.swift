@@ -13,6 +13,7 @@ class CarListViewModel: ObservableObject {
     
     let loalDecoder = LocalDecoder()
     
+
     func decodeCarList() {
         loalDecoder.fetchCarDataFromJson(fileName: "car_list") { result in
             switch result {
@@ -37,7 +38,8 @@ struct CarViewModel: Identifiable {
     
     let id = UUID().uuidString
     let car: Car
-    
+    var isExpanded: Bool = false // moved state variable to the model
+
     init(car: Car) {
         self.car = car
     }
