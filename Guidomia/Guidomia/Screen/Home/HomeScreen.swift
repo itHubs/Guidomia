@@ -139,7 +139,7 @@ struct HomeScreen: View {
                     
                     // car list element
 
-                    CarListView(cars:  self.carListVM.cars)
+                    CarListView(cars:  self.carListVM.cars, selectedCell: "")
                         .background(Color("black"))
                         
                 }
