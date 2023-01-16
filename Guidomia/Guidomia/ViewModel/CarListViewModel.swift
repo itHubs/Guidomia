@@ -10,7 +10,10 @@ import Foundation
 class CarListViewModel: ObservableObject {
 
     @Published var cars = [CarViewModel]()
-    
+    @Published var filterCars = [CarViewModel]()
+    @Published var models = [String]()
+    @Published var makes = [String]()
+
     let loalDecoder = LocalDecoder()
     
 
@@ -22,7 +25,27 @@ class CarListViewModel: ObservableObject {
                 if let cars = cars {
                     DispatchQueue.main.async {
                         
+                        var makeList:[String] = []
+
+                        for car in cars {
+                            makeList.insert(car.make, at: 0)
+                        }
+                        
+                        self.makes = makeList
+
+                        var modelList:[String] = []
+
+                        for car in cars {
+                            modelList.insert(car.model, at: 0)
+                        }
+                        
+                        self.models = modelList
+
+
                         self.cars = cars.map(CarViewModel.init)
+                        
+                        self.filterCars = self.cars
+                                                
                     }
                 }
             case .failure(let error):
@@ -49,6 +72,14 @@ struct CarViewModel: Identifiable {
         car.image
     }
     
+    var make: String {
+        car.make
+    }
+    
+    var model: String {
+        car.model
+    }
+
     var title: String {
         car.make
     }

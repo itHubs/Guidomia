@@ -188,11 +188,6 @@ struct CarListCell: View {
                     newcar.isExpanded = self.car.id == newcar.id
                     newCars.insert(newcar, at: i)
                     i+=1
-                    
-                    print(self.car.id)
-                    print(newcar.id)
-                    print(self.projectManager.selectedCell)
-                    print("--------- \(newcar.isExpanded)")
                 }
                 self.carListVM.cars = newCars
                 

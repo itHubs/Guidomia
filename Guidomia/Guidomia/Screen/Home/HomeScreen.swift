@@ -11,10 +11,18 @@ struct HomeScreen: View {
     
     @ObservedObject public var carListVM: CarListViewModel
     @State var projectManager = ProjectManager()
+    @State private var selectedMake: String
+    @State private var selectedModel: String
+    @State private var makeList: [String]
+    @State private var modelList: [String]
+
     init() {
         self.carListVM = CarListViewModel()
+        self.selectedMake = "Any make"
+        self.selectedModel = "Any model"
+        self.makeList = []
+        self.modelList = []
         self.carListVM.decodeCarList()
-            
     }
 
     var body: some View {
@@ -94,10 +102,31 @@ struct HomeScreen: View {
                             .padding(EdgeInsets(top: 16, leading: 16, bottom: 0, trailing: 16))
 
                         // make element
-                        Button {
-                            print("Any make tapped!")
+                        Menu {
+                            ForEach(self.makeList.count==0 ? self.carListVM.makes : self.makeList , id: \.self) { make in
+                                Button(make){
+                                    self.selectedMake = make
+                                    
+                                    self.carListVM.filterCars = self.carListVM.cars.filter {
+                                        $0.make == self.selectedMake
+                                    }
+//                                    if (self.selectedModel=="Any model"){
+                                        
+                                        var modelList:[String] = []
+
+                                        for car in self.carListVM.filterCars {
+                                            modelList.insert(car.model, at: 0)
+                                        }
+                                        
+                                        self.modelList = modelList
+                                        self.selectedModel = "Any model"
+                                        print(self.modelList)
+//                                    }
+                                }
+                                Divider()
+                            }
                         } label: {
-                            Text ("Any make")
+                            Text (self.selectedMake)
                                 .font(.system(size: 16, weight: .semibold))
                                 .padding()
                             Spacer()
@@ -107,15 +136,35 @@ struct HomeScreen: View {
                         .foregroundColor(Color("DarkGray"))
                         .background(Color("White"))
                         .cornerRadius(10)
-                        .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
+                        .padding(EdgeInsets(top: 0, leading: 16, bottom: 16, trailing: 16))
 
 
                         
                         // model element
-                        Button {
-                            print("Any model tapped!")
+                        Menu {
+                            ForEach(self.modelList.count==0 ? self.carListVM.models : self.modelList, id: \.self) { model in
+                                Button(model){
+                                    self.selectedModel = model
+                                    
+                                    self.carListVM.filterCars = self.carListVM.cars.filter {
+                                        $0.model == self.selectedModel
+                                    }
+//                                    if (self.selectedMake=="Any make"){
+                                        
+                                        var makeList:[String] = []
+
+                                        for car in self.carListVM.cars {
+                                            makeList.insert(car.make, at: 0)
+                                        }
+                                        
+                                        self.makeList = makeList
+//                                    }
+
+                                }
+                                Divider()
+                            }
                         } label: {
-                            Text ("Any model")
+                            Text (self.selectedModel)
                                 .font(.system(size: 16, weight: .semibold))
                                 .padding()
                             Spacer()
@@ -125,13 +174,12 @@ struct HomeScreen: View {
                         .foregroundColor(Color("DarkGray"))
                         .background(Color("White"))
                         .cornerRadius(10)
-                        .padding(EdgeInsets(top: 8, leading: 16, bottom: 24, trailing: 16))
+                        .padding(EdgeInsets(top: 0, leading: 16, bottom: 16, trailing: 16))
 
                     }
                     .background(Color("DarkGray"))
                     .cornerRadius(16)
                     .padding()
-
 
                     
                     // car list element
