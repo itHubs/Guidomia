@@ -183,7 +183,7 @@ struct HomeScreen: View {
 
                     
                     // car list element
-                    CarListView(cars:  self.carListVM.cars, projectManager: projectManager, carListVM: self.carListVM)
+                    CarListView(cars:  self.carListVM.filterCars, projectManager: projectManager, carListVM: self.carListVM)
                 }
                 
                 

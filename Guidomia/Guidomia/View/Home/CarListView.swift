@@ -17,7 +17,7 @@ struct CarListView: View {
     var body: some View {
         // list element
         VStack(alignment: .leading) {
-            ForEach(carListVM.cars) { car in
+            ForEach(cars) { car in
                 CarListCell(car: car, carListVM: carListVM, projectManager: projectManager)
             }
         }
