@@ -47,7 +47,6 @@ class LocalDecoder {
 
         }
         catch {
-            print("Error decoding JSON data: \(error)")
             response(.failure(.decodingError))
 
         }
@@ -64,7 +63,6 @@ class LocalDecoder {
                     
                     response(.success(cars))
                 } catch {
-                    print("Error decoding JSON data: \(error)")
                     response(.failure(.decodingError))
                 }
             }
