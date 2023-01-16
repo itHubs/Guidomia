@@ -9,13 +9,24 @@
 /* Begin PBXBuildFile section */
 		169A25FBD9187D33ED1B31A6 /* Pods_Guidomia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BCE3FD3E71906CE206D8B84 /* Pods_Guidomia.framework */; };
 		583E381A85EBF01A2C906138 /* Pods_Guidomia_GuidomiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D275AA5D39827EDC32E984DA /* Pods_Guidomia_GuidomiaUITests.framework */; };
+		72A2F4192975B76A007701B9 /* CarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A2F4182975B76A007701B9 /* CarData.swift */; };
+		72A2F41B2975C0A9007701B9 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A2F41A2975C0A9007701B9 /* String+Extension.swift */; };
 		72C66A1E29747854000C8896 /* GuidomiaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A1D29747854000C8896 /* GuidomiaApp.swift */; };
-		72C66A2029747854000C8896 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A1F29747854000C8896 /* ContentView.swift */; };
 		72C66A2229747859000C8896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C66A2129747859000C8896 /* Assets.xcassets */; };
 		72C66A2529747859000C8896 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C66A2429747859000C8896 /* Preview Assets.xcassets */; };
 		72C66A2F29747859000C8896 /* GuidomiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A2E29747859000C8896 /* GuidomiaTests.swift */; };
 		72C66A3929747859000C8896 /* GuidomiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A3829747859000C8896 /* GuidomiaUITests.swift */; };
 		72C66A3B29747859000C8896 /* GuidomiaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A3A29747859000C8896 /* GuidomiaUITestsLaunchTests.swift */; };
+		72C66A4E297482B9000C8896 /* car_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 72C66A4D297482B9000C8896 /* car_list.json */; };
+		72C66A5629748F9C000C8896 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A5529748F9C000C8896 /* HomeScreen.swift */; };
+		72C66A5829748FB6000C8896 /* CarListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A5729748FB6000C8896 /* CarListView.swift */; };
+		72C66A5A29748FD1000C8896 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A5929748FD1000C8896 /* RatingView.swift */; };
+		72C66A5C29748FEC000C8896 /* LocalDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A5B29748FEC000C8896 /* LocalDecoder.swift */; };
+		72C66A5E29749007000C8896 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A5D29749007000C8896 /* Car.swift */; };
+		72C66A602974901D000C8896 /* CarListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A5F2974901D000C8896 /* CarListViewModel.swift */; };
+		72CE55032974D10C00EFAD91 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CE55022974D10C00EFAD91 /* Int+Extension.swift */; };
+		72CE55052975781D00EFAD91 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CE55042975781D00EFAD91 /* Constant.swift */; };
+		72CE55072975788E00EFAD91 /* ProjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CE55062975788E00EFAD91 /* ProjectManager.swift */; };
 		C78EFE28C0E6B215A486DA86 /* Pods_GuidomiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE3D5D742A5EAB66762A3CC9 /* Pods_GuidomiaTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,9 +50,10 @@
 /* Begin PBXFileReference section */
 		2DD3001870172FAD2EF5C217 /* Pods-GuidomiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuidomiaTests.debug.xcconfig"; path = "Target Support Files/Pods-GuidomiaTests/Pods-GuidomiaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5FB4C9C035AD0FB0CE99859A /* Pods-GuidomiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuidomiaTests.release.xcconfig"; path = "Target Support Files/Pods-GuidomiaTests/Pods-GuidomiaTests.release.xcconfig"; sourceTree = "<group>"; };
+		72A2F4182975B76A007701B9 /* CarData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarData.swift; sourceTree = "<group>"; };
+		72A2F41A2975C0A9007701B9 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		72C66A1A29747854000C8896 /* Guidomia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidomia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C66A1D29747854000C8896 /* GuidomiaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidomiaApp.swift; sourceTree = "<group>"; };
-		72C66A1F29747854000C8896 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		72C66A2129747859000C8896 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72C66A2429747859000C8896 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		72C66A2A29747859000C8896 /* GuidomiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuidomiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +61,16 @@
 		72C66A3429747859000C8896 /* GuidomiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuidomiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C66A3829747859000C8896 /* GuidomiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidomiaUITests.swift; sourceTree = "<group>"; };
 		72C66A3A29747859000C8896 /* GuidomiaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidomiaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		72C66A4D297482B9000C8896 /* car_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = car_list.json; sourceTree = "<group>"; };
+		72C66A5529748F9C000C8896 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		72C66A5729748FB6000C8896 /* CarListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListView.swift; sourceTree = "<group>"; };
+		72C66A5929748FD1000C8896 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		72C66A5B29748FEC000C8896 /* LocalDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDecoder.swift; sourceTree = "<group>"; };
+		72C66A5D29749007000C8896 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		72C66A5F2974901D000C8896 /* CarListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewModel.swift; sourceTree = "<group>"; };
+		72CE55022974D10C00EFAD91 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		72CE55042975781D00EFAD91 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		72CE55062975788E00EFAD91 /* ProjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectManager.swift; sourceTree = "<group>"; };
 		8BCE3FD3E71906CE206D8B84 /* Pods_Guidomia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guidomia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		941E01B36B34680D9DD6213A /* Pods-Guidomia-GuidomiaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guidomia-GuidomiaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Guidomia-GuidomiaUITests/Pods-Guidomia-GuidomiaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		96D5C16AEE0573D4D15B8E86 /* Pods-Guidomia-GuidomiaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guidomia-GuidomiaUITests.release.xcconfig"; path = "Target Support Files/Pods-Guidomia-GuidomiaUITests/Pods-Guidomia-GuidomiaUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +118,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		72A2F4172975B748007701B9 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				72A2F4182975B76A007701B9 /* CarData.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
 		72C66A1129747854000C8896 = {
 			isa = PBXGroup;
 			children = (
@@ -121,8 +151,16 @@
 		72C66A1C29747854000C8896 /* Guidomia */ = {
 			isa = PBXGroup;
 			children = (
+				72A2F4172975B748007701B9 /* DataModel */,
+				72CE55012974D0F400EFAD91 /* Extension */,
+				72C66A5429748346000C8896 /* Controls */,
+				72C66A4C29748297000C8896 /* JSON */,
+				72C66A4B2974828C000C8896 /* Constants */,
+				72C66A4A2974827F000C8896 /* Model */,
+				72C66A4929748277000C8896 /* ViewModel */,
+				72C66A4829748269000C8896 /* View */,
+				72C66A472974825F000C8896 /* Screen */,
 				72C66A1D29747854000C8896 /* GuidomiaApp.swift */,
-				72C66A1F29747854000C8896 /* ContentView.swift */,
 				72C66A2129747859000C8896 /* Assets.xcassets */,
 				72C66A2329747859000C8896 /* Preview Content */,
 			);
@@ -154,6 +192,97 @@
 			path = GuidomiaUITests;
 			sourceTree = "<group>";
 		};
+		72C66A472974825F000C8896 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				72C66A50297482DD000C8896 /* Home */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		72C66A4829748269000C8896 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				72C66A52297482EE000C8896 /* Home */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		72C66A4929748277000C8896 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				72C66A5F2974901D000C8896 /* CarListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		72C66A4A2974827F000C8896 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				72C66A5D29749007000C8896 /* Car.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		72C66A4B2974828C000C8896 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				72CE55042975781D00EFAD91 /* Constant.swift */,
+				72CE55062975788E00EFAD91 /* ProjectManager.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		72C66A4C29748297000C8896 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				72C66A4F297482BE000C8896 /* JSONDecoder */,
+				72C66A4D297482B9000C8896 /* car_list.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		72C66A4F297482BE000C8896 /* JSONDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				72C66A5B29748FEC000C8896 /* LocalDecoder.swift */,
+			);
+			path = JSONDecoder;
+			sourceTree = "<group>";
+		};
+		72C66A50297482DD000C8896 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				72C66A5529748F9C000C8896 /* HomeScreen.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		72C66A52297482EE000C8896 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				72C66A5729748FB6000C8896 /* CarListView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		72C66A5429748346000C8896 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				72C66A5929748FD1000C8896 /* RatingView.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		72CE55012974D0F400EFAD91 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				72CE55022974D10C00EFAD91 /* Int+Extension.swift */,
+				72A2F41A2975C0A9007701B9 /* String+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		CAD7FB15B7338481813440AA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +293,6 @@
 				2DD3001870172FAD2EF5C217 /* Pods-GuidomiaTests.debug.xcconfig */,
 				5FB4C9C035AD0FB0CE99859A /* Pods-GuidomiaTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -179,6 +307,7 @@
 				72C66A1629747854000C8896 /* Sources */,
 				72C66A1729747854000C8896 /* Frameworks */,
 				72C66A1829747854000C8896 /* Resources */,
+				9C91EBA009D0CED4CD60F8C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,6 +345,7 @@
 				72C66A3029747859000C8896 /* Sources */,
 				72C66A3129747859000C8896 /* Frameworks */,
 				72C66A3229747859000C8896 /* Resources */,
+				3E938ED25655536EA134BDEC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -276,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72C66A2529747859000C8896 /* Preview Assets.xcassets in Resources */,
+				72C66A4E297482B9000C8896 /* car_list.json in Resources */,
 				72C66A2229747859000C8896 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +472,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3E938ED25655536EA134BDEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Guidomia-GuidomiaUITests/Pods-Guidomia-GuidomiaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Guidomia-GuidomiaUITests/Pods-Guidomia-GuidomiaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Guidomia-GuidomiaUITests/Pods-Guidomia-GuidomiaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		97F4BD0BEED8AD67DFC270CF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -363,6 +511,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9C91EBA009D0CED4CD60F8C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Guidomia/Pods-Guidomia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Guidomia/Pods-Guidomia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Guidomia/Pods-Guidomia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -370,8 +535,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72C66A2029747854000C8896 /* ContentView.swift in Sources */,
+				72C66A5829748FB6000C8896 /* CarListView.swift in Sources */,
 				72C66A1E29747854000C8896 /* GuidomiaApp.swift in Sources */,
+				72CE55052975781D00EFAD91 /* Constant.swift in Sources */,
+				72C66A5A29748FD1000C8896 /* RatingView.swift in Sources */,
+				72A2F41B2975C0A9007701B9 /* String+Extension.swift in Sources */,
+				72A2F4192975B76A007701B9 /* CarData.swift in Sources */,
+				72C66A5C29748FEC000C8896 /* LocalDecoder.swift in Sources */,
+				72CE55032974D10C00EFAD91 /* Int+Extension.swift in Sources */,
+				72C66A5E29749007000C8896 /* Car.swift in Sources */,
+				72CE55072975788E00EFAD91 /* ProjectManager.swift in Sources */,
+				72C66A5629748F9C000C8896 /* HomeScreen.swift in Sources */,
+				72C66A602974901D000C8896 /* CarListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
