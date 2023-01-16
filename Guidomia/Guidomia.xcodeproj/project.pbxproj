@@ -10,7 +10,6 @@
 		169A25FBD9187D33ED1B31A6 /* Pods_Guidomia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BCE3FD3E71906CE206D8B84 /* Pods_Guidomia.framework */; };
 		583E381A85EBF01A2C906138 /* Pods_Guidomia_GuidomiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D275AA5D39827EDC32E984DA /* Pods_Guidomia_GuidomiaUITests.framework */; };
 		72C66A1E29747854000C8896 /* GuidomiaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A1D29747854000C8896 /* GuidomiaApp.swift */; };
-		72C66A2029747854000C8896 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A1F29747854000C8896 /* ContentView.swift */; };
 		72C66A2229747859000C8896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C66A2129747859000C8896 /* Assets.xcassets */; };
 		72C66A2529747859000C8896 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C66A2429747859000C8896 /* Preview Assets.xcassets */; };
 		72C66A2F29747859000C8896 /* GuidomiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A2E29747859000C8896 /* GuidomiaTests.swift */; };
@@ -23,7 +22,7 @@
 		72C66A5C29748FEC000C8896 /* LocalDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A5B29748FEC000C8896 /* LocalDecoder.swift */; };
 		72C66A5E29749007000C8896 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A5D29749007000C8896 /* Car.swift */; };
 		72C66A602974901D000C8896 /* CarListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A5F2974901D000C8896 /* CarListViewModel.swift */; };
-		72C66A6229749060000C8896 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C66A6129749060000C8896 /* NavigationBar.swift */; };
+		72CE55032974D10C00EFAD91 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CE55022974D10C00EFAD91 /* Int+Extension.swift */; };
 		C78EFE28C0E6B215A486DA86 /* Pods_GuidomiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE3D5D742A5EAB66762A3CC9 /* Pods_GuidomiaTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +48,6 @@
 		5FB4C9C035AD0FB0CE99859A /* Pods-GuidomiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuidomiaTests.release.xcconfig"; path = "Target Support Files/Pods-GuidomiaTests/Pods-GuidomiaTests.release.xcconfig"; sourceTree = "<group>"; };
 		72C66A1A29747854000C8896 /* Guidomia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidomia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C66A1D29747854000C8896 /* GuidomiaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidomiaApp.swift; sourceTree = "<group>"; };
-		72C66A1F29747854000C8896 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		72C66A2129747859000C8896 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72C66A2429747859000C8896 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		72C66A2A29747859000C8896 /* GuidomiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuidomiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +62,7 @@
 		72C66A5B29748FEC000C8896 /* LocalDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDecoder.swift; sourceTree = "<group>"; };
 		72C66A5D29749007000C8896 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		72C66A5F2974901D000C8896 /* CarListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewModel.swift; sourceTree = "<group>"; };
-		72C66A6129749060000C8896 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		72CE55022974D10C00EFAD91 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		8BCE3FD3E71906CE206D8B84 /* Pods_Guidomia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guidomia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		941E01B36B34680D9DD6213A /* Pods-Guidomia-GuidomiaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guidomia-GuidomiaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Guidomia-GuidomiaUITests/Pods-Guidomia-GuidomiaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		96D5C16AEE0573D4D15B8E86 /* Pods-Guidomia-GuidomiaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guidomia-GuidomiaUITests.release.xcconfig"; path = "Target Support Files/Pods-Guidomia-GuidomiaUITests/Pods-Guidomia-GuidomiaUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +135,7 @@
 		72C66A1C29747854000C8896 /* Guidomia */ = {
 			isa = PBXGroup;
 			children = (
+				72CE55012974D0F400EFAD91 /* Extension */,
 				72C66A5429748346000C8896 /* Controls */,
 				72C66A4C29748297000C8896 /* JSON */,
 				72C66A4B2974828C000C8896 /* Constants */,
@@ -145,7 +144,6 @@
 				72C66A4829748269000C8896 /* View */,
 				72C66A472974825F000C8896 /* Screen */,
 				72C66A1D29747854000C8896 /* GuidomiaApp.swift */,
-				72C66A1F29747854000C8896 /* ContentView.swift */,
 				72C66A2129747859000C8896 /* Assets.xcassets */,
 				72C66A2329747859000C8896 /* Preview Content */,
 			);
@@ -189,7 +187,6 @@
 			isa = PBXGroup;
 			children = (
 				72C66A52297482EE000C8896 /* Home */,
-				72C66A51297482E4000C8896 /* Navigation */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,14 +239,6 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		72C66A51297482E4000C8896 /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				72C66A6129749060000C8896 /* NavigationBar.swift */,
-			);
-			path = Navigation;
-			sourceTree = "<group>";
-		};
 		72C66A52297482EE000C8896 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +253,14 @@
 				72C66A5929748FD1000C8896 /* RatingView.swift */,
 			);
 			path = Controls;
+			sourceTree = "<group>";
+		};
+		72CE55012974D0F400EFAD91 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				72CE55022974D10C00EFAD91 /* Int+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		CAD7FB15B7338481813440AA /* Pods */ = {
@@ -482,12 +479,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72C66A2029747854000C8896 /* ContentView.swift in Sources */,
 				72C66A5829748FB6000C8896 /* CarListView.swift in Sources */,
 				72C66A1E29747854000C8896 /* GuidomiaApp.swift in Sources */,
 				72C66A5A29748FD1000C8896 /* RatingView.swift in Sources */,
 				72C66A5C29748FEC000C8896 /* LocalDecoder.swift in Sources */,
-				72C66A6229749060000C8896 /* NavigationBar.swift in Sources */,
+				72CE55032974D10C00EFAD91 /* Int+Extension.swift in Sources */,
 				72C66A5E29749007000C8896 /* Car.swift in Sources */,
 				72C66A5629748F9C000C8896 /* HomeScreen.swift in Sources */,
 				72C66A602974901D000C8896 /* CarListViewModel.swift in Sources */,
